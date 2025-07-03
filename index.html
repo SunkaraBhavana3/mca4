@@ -8,45 +8,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <style>
     /* Navbar styles */
-    .navbar {
+    .navbar-custom {
       background-color: white;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
-    .navbar .logo {
+    .navbar-brand {
       font-weight: bold;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
       color: #333;
     }
 
-    /* Logo image inside navbar */
-    .navbar .logo img {
+    .navbar-brand img {
       height: 40px;
-      vertical-align: middle;
       margin-right: 10px;
     }
 
-    .navbar nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar nav ul li a {
-      text-decoration: none;
-      color: #333;
+    .navbar-nav .nav-link {
       font-weight: 500;
+      color: #333 !important;
     }
 
     body {
@@ -127,24 +106,29 @@
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="SDCIT Logo" />
-      SDCIT
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="abovepage.html">About</a></li>
-        <li><a href="#about">Groups</a></li>
-        <li><a href="#leadership">Leadership</a></li>
-        <li><a href="#infrastructure">Infrastructure</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- Responsive Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="SDCIT Logo" height="40" class="me-2">
+        <strong>SDCIT</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+       <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/homepage/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/about/">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/group/">Groups</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/about/#leadership">Leadership</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/about/#infrastructure">Infrastructure</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/about/#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://sunkarabhavana3.github.io/contact/">Contact</a></li>
       </ul>
-    </nav>
-  </div>
+      </div>
+    </div>
+  </nav>
 
   <div class="container">
     <header class="page-header">
@@ -408,7 +392,7 @@ Software Engineering
       <h5>📖 Need More Resources?</h5>
       <p>Explore our comprehensive library, discover research papers, or connect with academic support.</p>
       
-      <a href="contact.html" class="btn btn-outline-secondary ms-2">Contact Academic Advisor</a>
+      <a href="https://sunkarabhavana3.github.io/contact/" class="btn btn-outline-secondary ms-2">Contact Academic Advisor</a>
     </div>
 
     <!-- Footer -->
